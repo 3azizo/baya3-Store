@@ -1,6 +1,6 @@
 {
-  "short_name": "formal suits",
-  "name": "formal suits store",
+  "short_name": "baya3 store",
+  "name": "baya3 store",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

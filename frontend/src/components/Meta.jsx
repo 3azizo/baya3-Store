@@ -11,9 +11,9 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: 'formal suits فورمال سوتس',
-  description: 'متجر فورمال سوتس للبدل الرجالي',
-  keywords: 'ملابس رجالي suits, clothing',
+  title: 'baya3 store ',
+  description: ' laptop, mobile, accessories,  electronics',
+  keywords: ' laptop mobile accessories electronics',
 };
 
 export default Meta;
