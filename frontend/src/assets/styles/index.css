@@ -4,7 +4,15 @@ body {
   direction: rtl; 
   text-align: right; 
 }
+.btn-primary {
+  background-color: #8e4a7d !important;
+  border-color: #8e4a7d !important;
+}
 
+.btn-primary:hover {
+  background-color: #a35d91 !important;
+  border-color: #a35d91 !important;
+}
 .navbar-nav, .dropdown-menu {
   font-family: 'Cairo', sans-serif;
   font-weight: 600;
@@ -41,7 +49,7 @@ main {
 
 .navbar-nav .nav-link:hover,
 .navbar-brand:hover {
-  color: #007bff !important; 
+  color: #8e4a7d !important; 
 }
 
 /* Dropdown styling */
@@ -60,7 +68,7 @@ main {
 }
 
 .navbar-nav .dropdown-item:hover {
-  background-color: #007bff; 
+  background-color: #8e4a7d; 
   color: #fff;
 }
 
@@ -103,13 +111,12 @@ main {
 }
 
 .search-box-input {
-  border-radius: 0.25rem; /* Slightly rounded corners */
-  border: 1px solid #ced4da; /* Subtle border */
-  padding: 0.5rem 1rem; /* Comfortable padding */
+  border-radius: 0.25rem; 
+  border: 1px solid #ced4da; 
+  padding: 0.5rem 1rem; 
   font-size: 0.9rem;
   text-align: right; 
   direction: rtl; 
-  background-color: #f8f9fa; 
   color: #343a40;
   transition: all 0.3s ease-in-out; 
   width: 180px; 
@@ -128,9 +135,6 @@ main {
 }
 
 .search-button {
-  background-color: #007bff; /* Primary blue or your accent color */
-  color: #ffffff; /* White text */
-  border: 1px solid #007bff; /* Matching border */
   border-radius: 0.25rem; 
   padding: 0.5rem 1rem; 
   font-weight: 600; 
@@ -140,10 +144,10 @@ main {
   white-space: nowrap; 
 }
 
-.search-button:hover {
+/* .search-button:hover {
   background-color: #0056b3;
   border-color: #0056b3;
-}
+} */
 
 .header-bg-dark .search-box-input {
   background-color: #343a40; 
@@ -203,11 +207,28 @@ table th {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-left: 5px solid #8e4a7d;
 }
-.bg-c{
-  background-color: #000000!important;
-  
+.bg-c {
+  background-color: #1a1a1a;
+}
+/* .carousel-img-wrapper {
+  width: 100%;
+  height: 400px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
+.carouselImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 8px; */
 }
 
 @media (min-width:768px){
@@ -293,20 +314,18 @@ margin-right: 150px;
   bottom: 0;
   width: 80px; /* عرض الخط */
   height: 4px; /* سمك الخط */
-  background-color: #007bff; /* لون مميز للخط */
+  background-color: #8e4a7d; /* لون مميز للخط */
   border-radius: 2px;
 }
 
-/* --- تصميم كارت الفئة --- */
-
 .category-card-link {
-  color: inherit; /* لضمان أن النص لا يأخذ لون اللينك الافتراضي */
+  color: inherit; 
 }
 
 .category-card {
-  background-color: #ffffff; /* خلفية بيضاء نقية للكارت */
-  border: 1px solid #e0e0e0; /* حدود خفيفة */
-  border-radius: 12px; /* زوايا دائرية أكثر */
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px;
   padding: 1.5rem; /* مسافة داخلية مريحة */
   display: flex;
   flex-direction: column;
@@ -320,7 +339,7 @@ margin-right: 150px;
 .category-card:hover {
   transform: translateY(-8px); /* رفع الكارت قليلاً عند التحويم */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* ظل أكبر وأكثر وضوحًا */
-  border-color: #007bff; /* حدود بلون مميز عند التحويم */
+  border-color: #8e4a7d; /* حدود بلون مميز عند التحويم */
 }
 
 /* --- الأيقونات داخل الكارت --- */

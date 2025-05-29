@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Carousel, Image } from 'react-bootstrap';
 import Message from './Message';
-import { useGetTopProductsQuery } from '../slices/productsApiSlice';
+import { useGetTopProductsFiveQuery } from '../slices/productsApiSlice';
 
 const ProductCarousel = () => {
-  const { data: products, isLoading, error } = useGetTopProductsQuery();
+  const { data: products, isLoading, error } = useGetTopProductsFiveQuery();
 
   return isLoading ? null : error ? (
     <Message variant='danger'>{error?.data?.message || error.error}</Message>
@@ -13,10 +13,12 @@ const ProductCarousel = () => {
       {products.map((product) => (
         <Carousel.Item key={product._id}>
           <Link to={`/product/${product._id}`}>
-            <Image src={product.image} alt={product.name} fluid  className='carouselImg'/>
-            <Carousel.Caption className='carousel-caption'>
-              <h2 className='text-white text-right'>
-                {product.name} ({product.price} <span style={{fontSize:"16px"}}>جنيه</span>)
+            <div className="carousel-img-wrapper">
+              <Image src={product.image} alt={product.name} fluid className="carouselImg" />
+            </div>           
+             <Carousel.Caption className='carousel-caption'>
+              <h2 className='text-light'>
+                <strong style={{ color: '#8e4a7d' }}>{product.name}</strong> ({product.price} <span style={{ fontSize: '12px' }}>جنيه</span>)
               </h2>
             </Carousel.Caption>
           </Link>
