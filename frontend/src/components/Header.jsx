@@ -30,10 +30,8 @@ const Header = () => {
 
   return (
     <header>
-      {/* Use the new custom class for styling */}
       <Navbar expand='lg' className='header-bg-dark' collapseOnSelect>
         <Container>
-          {/* Logo on the right for RTL */}
           <Navbar.Brand as={Link} to='/'>
             <img src={logo} alt='Formal Suits' className='logo' />
           </Navbar.Brand>
@@ -62,6 +60,12 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/categories/psGames'>
                   PS Games
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/categories/شنط'>
+                  شنط
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/categories/سكوتر'>
+                  سكوتر
                 </NavDropdown.Item>
               </NavDropdown>
 

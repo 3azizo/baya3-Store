@@ -63,9 +63,7 @@ const productSchema = mongoose.Schema(
       type: Number,
       required: true,
       default: 0,
-    },
-    sizes: { type: [String], required: false, default: [] },
-    colors: { type: [String], required: false, default: [] }, // حفظ الألوان
+    }
 
   },
   {

@@ -19,7 +19,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 connectDB();
 
 const app = express();
-app.use(cors()); // ✅ حل مشكلة CORS إذا كانت موجودة
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -30,9 +30,9 @@ app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
 
-app.get('/api/config/paypal', (req, res) =>
-  res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
-);
+// app.get('/api/config/paypal', (req, res) =>
+//   res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
+// );
 
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();

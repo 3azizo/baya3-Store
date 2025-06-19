@@ -1,17 +1,33 @@
 /* In your main CSS file */
+:root{
+  --main-color:#8e4a7d;
+  --alt-main:#a35d91;
+  --sec-back:#1b2132;
+  --bg-color: #1f263a;
+  --dark-blue-color: #0e121e;
+  --dark-color: #00000024;
+  --lighter-dark-color: #0000001a;
+  --light-dark-color: #00000012;
+  --normal-font-weight: 400;
+  --bold-font-weight: 500;
+  --light-color: #ffffff24;
+  --light-darkblue: #222b46;
+    --light-theme-color: #383e50;
+}
 body {
   font-family: 'Noto Sans Arabic', sans-serif;
   direction: rtl; 
   text-align: right; 
+  background-color: var(--bg-color);
 }
 .btn-primary {
-  background-color: #8e4a7d !important;
-  border-color: #8e4a7d !important;
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
 }
 
 .btn-primary:hover {
-  background-color: #a35d91 !important;
-  border-color: #a35d91 !important;
+  background-color: var(--alt-main) !important;
+  border-color: var(--alt-main) !important;
 }
 .navbar-nav, .dropdown-menu {
   font-family: 'Cairo', sans-serif;
@@ -37,7 +53,7 @@ main {
 /* HEADER */
 
 .header-bg-dark {
-  background-color: #1a1a1a; 
+  background-color: var(--bg-color); 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
@@ -49,12 +65,12 @@ main {
 
 .navbar-nav .nav-link:hover,
 .navbar-brand:hover {
-  color: #8e4a7d !important; 
+  color: var(--main-color) !important; 
 }
 
 /* Dropdown styling */
 .navbar-nav .dropdown-menu {
-  background-color: #2c2c2c;
+  background-color: var(--dark-blue-color);
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -81,16 +97,11 @@ main {
 }
 
 /* Logo styling */
-.logo {
-  height: 40px; 
-  width: auto;
-  margin-right: 15px; 
-}
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background-color: #2c2c2c;
+    background-color:var(--light-dark-color);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
@@ -144,13 +155,9 @@ main {
   white-space: nowrap; 
 }
 
-/* .search-button:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-} */
 
 .header-bg-dark .search-box-input {
-  background-color: #343a40; 
+  background-color: var(--dark-blue-color); 
   border-color: #495057;
   color: #f8f9fa;
 }
@@ -192,87 +199,24 @@ table th {
 
 .review h2 {
   font-size: 24px;
-  background: #f4f4f4;
   padding: 10px;
-  border: 1px solid #ddd;
+  color:var(--main-color)
 }
 
 .review button {
   margin-top: 10px;
 }
 
-.carousel-caption {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    border-left: 5px solid #8e4a7d;
-}
-.bg-c {
-  background-color: #1a1a1a;
-}
-/* .carousel-img-wrapper {
-  width: 100%;
-  height: 400px;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-} */
 
-.carouselImg {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  /* border-radius: 8px; */
-}
-
-@media (min-width:768px){
-  .larg-m{
-margin-right: 150px;
-}
-}
-
-
-@media (min-width:768px){
-  img.carouselImg{
-    max-width:40%; /* Ensure the image doesn't overflow its container */
-    height: auto;    /* Maintain the aspect ratio */
-    display: block;
-  
-  }
-}
 .logo{
   width: 64px;
+  margin-right: 15px; 
   height:auto
 }
 
 
-.size-button {
-  background-color: white;
-  border: 1px solid #ccc;
-  color: black;
-  padding: 5px 10px;
-  margin: 5px;
-  cursor: pointer;
-}
 
-.size-button.selected {
-  background-color: blue;
-  color: white;
-}
 
-.size-remove-button {
-  background-color: red;
-  color: white;
-  padding: 5px;
-  border: none;
-  cursor: pointer;
-}
 
 /* .category
 .icon-container img {
@@ -292,15 +236,13 @@ margin-right: 150px;
   transform: translateY(-5px); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 } */
-/* أضف هذه الأنماط إلى ملف CSS العام لمشروعك، مثل index.css أو App.css */
 
-/* --- قسم الفئات الرئيسية --- */
 
 .category-section-title {
   font-family: 'Cairo', sans-serif; /* استخدم خط عربي جذاب */
   font-size: 2.5rem; /* حجم أكبر للعنوان */
   font-weight: 700; /* خط سميك */
-  color: #333; /* لون غامق للعناوين */
+  color:#fff; /* لون غامق للعناوين */
   margin-bottom: 3rem; /* مسافة أكبر تحت العنوان */
   position: relative; /* لإضافة خط تحت العنوان */
   padding-bottom: 10px; /* مسافة للخط */
@@ -323,17 +265,17 @@ margin-right: 150px;
 }
 
 .category-card {
-  background-color: #ffffff; 
-  border: 1px solid #e0e0e0; 
+  background-color: var(--sec-back); 
+  border: 1px solid var(--dark-blue-color); 
   border-radius: 12px;
-  padding: 1.5rem; /* مسافة داخلية مريحة */
+  padding: 1.5rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   transition: all 0.3s ease-in-out; /* حركة سلسة عند التفاعل */
-  height: 100%; /* تأكيد الارتفاع الموحد */
+  height: 100%;
 }
 
 .category-card:hover {
@@ -345,29 +287,28 @@ margin-right: 150px;
 /* --- الأيقونات داخل الكارت --- */
 
 .icon-wrapper {
-  width: 90px; /* حجم موحد للأيقونة */
+  width: 90px;
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f8ff; /* خلفية خفيفة للأيقونة */
+  background-color: var(--light-color); /* خلفية خفيفة للأيقونة */
   border-radius: 50%; /* شكل دائري */
   margin-bottom: 1rem; /* مسافة تحت الأيقونة */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* ظل خفيف للأيقونة */
 }
 
 .category-icon {
-  width: 60%; /* حجم الأيقونة داخل الـ wrapper */
+  width: 60%; 
   height: 60%;
-  object-fit: contain; /* للحفاظ على أبعاد الصورة */
+  object-fit: contain; 
 }
 
-/* --- عنوان الفئة داخل الكارت --- */
 
 .category-title {
   font-size: 1.25rem; 
   font-weight: 600; 
-  color: #555; /* لون نص معتدل */
+  color: #ffffffd1; /* لون نص معتدل */
   margin-top: 0.5rem; /* مسافة فوق العنوان */
 }
 
@@ -398,16 +339,24 @@ margin-right: 150px;
   }
 }
 
-/* .card-body {
-  transition: transform 0.3s ease;
-} */
+
 h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #333;
+  color: #fff
 }
-
+.porduct-card{
+  background-color: var(--sec-back);
+}
 .card-title {
   font-size: 1.1rem;
-  color: #000000;
+  color: var(--main-color);
+}
+.list-group-item{
+  background-color: transparent !important;
+
+}input,select,textarea{
+    background-color: var(--dark-blue-color) !important; 
+    border-color: var(--bg-color)!important;
+
 }

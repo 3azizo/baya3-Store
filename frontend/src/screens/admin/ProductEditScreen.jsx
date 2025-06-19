@@ -166,6 +166,8 @@ const ProductEditScreen = () => {
                 <option value="لابتوب">لابتوب</option>
                 <option value="اكسسوارات">اكسسوارات</option>              
                 <option value="psGames">PS Games</option>              
+                <option value="سكوتر">سكوتر</option>              
+                <option value="شنط">شنط</option>              
               </Form.Select>
             </Form.Group>
 

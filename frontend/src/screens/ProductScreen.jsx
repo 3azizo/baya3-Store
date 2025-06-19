@@ -89,7 +89,7 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
+      <Link className='btn btn-dark my-3' to='/'>
         رجوع
       </Link>
       {isLoading ? (
@@ -106,17 +106,17 @@ const ProductScreen = () => {
               <Image src={product.image} alt={product.name} fluid />
             </Col>
             <Col md={3}>
-              <ListGroup variant='flush'>
-                <ListGroup.Item>
+              <ListGroup  variant='flush'>
+                <ListGroup.Item >
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item >
                   <Rating
                     value={product.rating}
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>السعر: {product.price} <span style={{fontSize:"16px"}}>جنيه</span></ListGroup.Item>
+                <ListGroup.Item >السعر: {product.price} <span style={{fontSize:"16px"}}>جنيه</span></ListGroup.Item>
                 <ListGroup.Item>
                   الوصف: {product.description}
                 </ListGroup.Item>
@@ -125,8 +125,8 @@ const ProductScreen = () => {
             <Col md={3}>
               <Card>
                 <ListGroup variant='flush'>
-                  <ListGroup.Item>
-                    <Row>
+                  <ListGroup.Item >
+                    <Row >
                       <Col>السعر:</Col>
                       <Col>
                         <strong>{product.price} <span style={{fontSize:"16px"}}>جنيه</span></strong>

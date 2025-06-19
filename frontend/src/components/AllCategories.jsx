@@ -3,6 +3,8 @@ import laptop from "../assets/categoriesIcon/laptop.png";
 import PlayStation from "../assets/categoriesIcon/PlayStation.png";
 import accessories from "../assets/categoriesIcon/accessories.png";
 import psGames from "../assets/categoriesIcon/console games.png";
+import scooter from "../assets/categoriesIcon/scooter.png"
+import bag from "../assets/categoriesIcon/bag.png"
 import { Link } from 'react-router-dom';
 
 const AllCategories = () => {
@@ -11,6 +13,8 @@ const AllCategories = () => {
     { name: 'بلايستيشن', icon: PlayStation, path: '/categories/بلايستيشن' },
     { name: 'اكسسوارات', icon: accessories, path: '/categories/اكسسوارات' },
     { name: 'PS Games', icon: psGames, path: '/categories/psGames' },
+    { name: 'سكوتر', icon: scooter, path: '/categories/سكوتر' },
+    { name: 'شنط', icon: bag, path: '/categories/شنط' },
 
   ];
 

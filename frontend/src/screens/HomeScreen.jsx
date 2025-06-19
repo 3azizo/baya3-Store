@@ -7,8 +7,10 @@ import Product from '../components/Product';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 // import Paginate from '../components/Paginate';
-import ProductCarousel from '../components/ProductCarousel';
+// import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
+import TripleSlider from '../components/TripleSlider';
+import ContactLinks from '../components/concatLinks/ContactLinks';
 // 
 import AllCategories from '../components/AllCategories';
 
@@ -37,7 +39,8 @@ const HomeScreen = () => {
     <>
       {!keyword ? (
         <>
-        <ProductCarousel />
+        <TripleSlider />
+        <ContactLinks/>
         <AllCategories/>        
         </>
 
