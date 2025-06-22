@@ -40,7 +40,7 @@ const ContactLinks = () => {
         <FaWhatsapp />
       </a>
 
-      <a
+      {/* <a
         href="https://instapay.eg"
         target="_blank"
         rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const ContactLinks = () => {
         title="Instapay"
       >
         <img src={instapay} alt="instpay" />
-      </a>
+      </a> */}
 
       <a
         href="tel:01068054888"
@@ -58,7 +58,7 @@ const ContactLinks = () => {
         <SiVodafone />
       </a>
       <a
-        href="#"
+        href="https://www.google.com/maps/dir//%D8%AC%D9%8A%D9%87%D8%A7%D9%86+%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%A7%D8%AA%D8%8C+%D8%A7%D9%84%D9%85%D9%86%D8%B5%D9%88%D8%B1%D8%A9%D8%8C+%D8%A7%D9%88%D9%84+%D8%A7%D9%84%D9%85%D9%86%D8%B5%D9%88%D8%B1%D8%A9%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D8%AF%D9%82%D9%87%D9%84%D9%8A%D8%A9+7650160%E2%80%AD/@31.0474937,31.4327301,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x14f79dd84260d2d3:0x435a726a96610bf2!2m2!1d31.3626899!2d31.0389822?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
         className="contact-icon map"
         title="location"
       >
